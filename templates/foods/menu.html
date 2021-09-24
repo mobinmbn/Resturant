@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+	Special menu
+{% endblock title %}
+{% block menu %}
+active
+{% endblock menu %}
+{% block body %}
+	<!-- Start All Pages -->
+	<div class="all-page-title page-breadcrumb">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1>Special Menu</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End All Pages -->
+	
+{% include "menu.html" %}
+{% include "QT.html" %}
+{% include "customer reviews.html" %}
+{% endblock body %}

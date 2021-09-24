@@ -1,0 +1,249 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Coming Soon</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Responsive View Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place in the root directory -->
+    <link rel="icon" href="{% static 'images/favico.png' %}" type="image/x-icon">
+
+    <!-- Animate.CSS -->
+    <link rel="stylesheet" href="{% static 'css1/animate.css' %}"> 
+
+    <!-- Font Aewsome Style -->
+    <link rel="stylesheet" href="{% static 'css1/font-awesome.min.css' %}">
+
+	<!-- Fullscreen Background Slider -->
+    <link href="{% static 'css1/jquery.maximage.min.css' %}" rel="stylesheet">
+    
+    <!-- Bootstrap Style -->
+    <link rel="stylesheet" href="{% static 'css1/bootstrap.min.css' %}">
+
+    <!-- Reset Style -->
+    <link rel="stylesheet" href="{% static 'css1/normalize.css' %}">
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="{% static 'css1/main.css' %}">
+    
+    <!-- Color Switcher Style -->
+    <link rel="stylesheet" href="{% static 'switcher/switcher.css' %}">    
+    <!-- alternate style start || to use your preferred color, simply remove all style colors below and leave only your preferred color -->   
+    <link href="{% static 'css1/colors/dark.css' %}" rel="stylesheet">
+    <link href="{% static 'css1/colors/brick.css' %}" rel="stylesheet">
+    <link href="{% static 'css1/colors/turquoise.css' %}" rel="stylesheet">
+    <link href="{% static 'css1/colors/violet.css' %}" rel="stylesheet">
+    <link href="{% static 'css1/colors/purple.css' %}" rel="stylesheet">
+    <link href="{% static 'css1/colors/pink.css' %}" rel="stylesheet">
+    <link href="{% static 'css1/colors/orange.css' %}" rel="stylesheet">   
+    <link href="{% static 'css1/colors/blue-2.css' %}" rel="stylesheet">
+    <link href="{% static 'css1/colors/blue.css' %}" rel="stylesheet">
+    <link href="{% static 'css1/colors/green-2.css' %}" rel="stylesheet">
+    <link href="{% static 'css1/colors/green.css' %}" rel="stylesheet">
+    <link href="{% static 'css1/colors/red-2.css' %}" rel="stylesheet">
+    <link href="{% static 'css1/colors/red.css' %}" rel="stylesheet">
+    <link href="{% static 'css1/colors/red.css' %}" rel="stylesheet">
+    <link href="{% static 'css1/colors/default-color.css' %}" rel="stylesheet"><!-- alternate style end -->
+
+    <script src="{% static 'js1/vendor/modernizr-2.8.3.min.js' %}"></script>
+</head>
+<body>
+
+<!-- === Header Section === -->
+<div id="container">
+	<!-- +++ Intro Section ++++ -->
+    <section class="intro">
+    	<div class="bg-overlay"></div>
+    	<!-- Fullscreen Background Slider Images -->
+		<div id="maximage">
+		    <img src="{% static 'img/slide-one.jpg' %}" alt="">
+		    <img src="{% static 'img/slide-two.jpg' %}" alt="">
+		</div>
+		
+		<!-- ====+++ Intro Section Content +++==== -->
+		<div class="center-content">			
+			<div class="intro-content text-center">	
+				<!-- Logo -->								
+				<div class="logo">
+					<h2 class="text-logo">Coming Soon</h2>
+				</div><!-- /End logo -->							
+				<!-- ==== Main Heading ==== -->												
+				<h1 class="intro-title">We are Comming Soon<span class="obak">!</span></h1>
+
+				<!--Spin Clock -->
+				<i class="fa fa-clock-o fa-spin fa-4x fa-clock-spin"></i>
+						
+				<!-- ====+++ Countdown Timer +++==== -->						
+				<ul class="countdown">
+			        <li>
+			            <span class="days">10</span>
+			            <p class="days-ref">days</p>
+			        </li>
+			        <li class="seperator"><i class="fa fa-clock-o"></i><br><i class="fa fa-clock-o"></i></li>
+			        <li>
+			            <span class="hours">14</span>
+			            <p class="hours-ref">hours</p>
+			        </li>
+			        <li class="seperator"><i class="fa fa-clock-o"></i><br><i class="fa fa-clock-o"></i></li>
+			        <li>
+			            <span class="minutes">35</span>
+			            <p class="minutes-ref">minutes</p>
+			        </li>
+			        <li class="seperator"><i class="fa fa-clock-o"></i><br><i class="fa fa-clock-o"></i></li>
+			        <li>
+			            <span class="seconds">28</span>
+			            <p class="seconds-ref">seconds</p>
+			        </li>
+			    </ul>							
+				
+				<!-- ==== Intro Section Sub-Heading ==== -->
+				
+				<div class="intro-subtitle">
+					<p>We are currently Creating Something Awesome.</p>
+				</div>							
+						
+			</div> <!-- /End Intro Section Content -->
+		</div>
+		<!-- ==== Intro Section Bottom Content ==== -->
+		<div class="container-bottom-content">					
+			<!-- ==== Social Links ==== -->
+			<div class="social">
+				<a href="https://www.facebook.com"><i class="fa fa-facebook fa-2x fa-social"></i></a>
+				<a href="https://www.twitter.com"><i class="fa fa-twitter fa-2x fa-social"></i></a>
+				<a href="https://www.linkedin.com"><i class="fa fa-linkedin fa-2x fa-social"></i></a>
+				<a href="https://www.plus.google.com"><i class="fa fa-google-plus fa-2x fa-social"></i></a>
+			</div> <!-- /End Social Links -->
+
+			<!-- ==== Notify Section ==== -->
+			<div class="notify-after text-center">						
+				<h2>Notify Me</h2>
+				<p>Subscribe our mail list for Latest update</p>
+				<form id="mc-form" class="form-inline" role="form">
+					<div class="form-group subscribe-form">							  							  
+						<input id="mc-email" type="email" placeholder="Your email" class="form-control input-label input-notify-after">
+						<button type="submit" class="btn btn-default btn-notify-after"><i class="fa fa-send-o"></i></button>
+					</div><!-- End email input -->						
+					<div class="subscribe_lebel">
+						<label for="mc-email"></label>
+					</div> 								
+				</form>																							
+			</div> <!-- /End Notify Section -->	
+
+			<!-- ==== Trigger Button ==== -->										
+			<button class="trigger">
+				<svg width="100%" height="100%" viewBox="0 0 60 60" preserveAspectRatio="none">
+					<g class="icon icon-grid">
+						<rect x="32.5" y="5.5" width="22" height="22"/>
+						<rect x="4.5" y="5.5" width="22" height="22"/>
+						<rect x="32.5" y="33.5" width="22" height="22"/>
+						<rect x="4.5" y="33.5" width="22" height="22"/>
+					</g>
+					<g class="icon icon-cross">
+						<line x1="4.5" y1="55.5" x2="54.953" y2="5.046"/>
+						<line x1="54.953" y1="55.5" x2="4.5" y2="5.047"/>
+					</g>
+				</svg>
+				<span>View content</span>
+			</button>											
+		</div> <!-- /End Intro Section Bottom Content -->			
+	</section><!-- /end intro section -->
+
+	<!-- +++ Trigger After Content +++ -->
+	<section class="content-wrapper">
+		<!-- ==== About Section ==== -->
+		<div class="about content-div">
+			<div class="container padding-x">
+				<div class="row text-center">
+					<!-- About Section Heading -->
+					<h2 class="title margin-btm-x">About Us</h2>
+					<!-- About Section Tagline -->
+					<p class="text-center title-tag">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<div class="col-sm-offset-1 col-sm-10 col-xs-12">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat congue leo, nec vehicula elit vehicula vel. Duis odio nibh, malesuada sed luctus ut, consectetur vel dui. Mauris vel imperdiet nulla. Sed eu ligula augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed a justo nec elit feugiat facilisis quis quis elit.</p>
+					</div>
+				</div>
+			</div>
+		</div> <!-- /End About Section -->
+
+		<!-- ==== Contact Section ==== -->
+		<div class="contact content-div">
+			<div class="container  padding-2x">
+				<div class="row text-center">
+					<!-- Contact Section Heading -->
+					<h2 class="text-center title contact-title margin-btm-x">Contact Us</h2>
+					<!-- Contact Section Tagline -->
+					<p class="text-center title-tag contact-tag">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<!-- Contact Form -->
+					<form id="contact-form" class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12" action="send.php" method="post" name="send">
+						<div class="form-group">
+							<label for="name">Name</label>								  
+						  	<input id="name" name="name" placeholder="Your name" class="form-control requiredField name input-label" data-new-placeholder="Your name" type="text">
+							<i class="fa fa-user"></i>								  
+						</div><!-- End name input -->								
+						<div class="form-group">
+						  	<label for="mail">Email</label>								  
+							<input id="mail" name="email" placeholder="Your email" class="form-control requiredField email input-label" data-new-placeholder="Your email" type="text">
+							<i class="fa fa-envelope"></i>								  
+						</div><!-- End email input -->
+						<div class="form-group">
+						  	<label for="message">Message</label>									
+							<textarea id="message" name="message" placeholder="Your message" class="form-control requiredField input-label" data-new-placeholder="Your message" rows="6"></textarea>
+							<i class="fa fa-comment"></i>
+						</div><!-- End textarea -->
+						<p><button name="submit" type="submit" class="btn btn-block btn-contact">Send Message&nbsp;<i class="fa fa-send-o"></i></button></p>								
+					</form>	<!-- /End Contact Form --> 					
+				</div>
+			</div>
+		</div> <!-- /End Contact Section -->
+
+        <!-- ==== Footer Section ==== -->
+        <footer id="footer" class="content-div">
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-sm-12">
+        				<div class="copyright">
+        					<!-- Copyright Text -->
+			        		<p class="text-center">Copyright &copy; 2015. All Rights Reserved CodexTree</p>
+			        	</div>
+        			</div>
+        		</div>
+        	</div>		        	
+        </footer> <!-- /End Footer Section -->
+	</section> <!-- /End Trigger Content -->
+</div> 
+
+<!-- jQuery Library -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="{% static "js1/vendor/jquery-1.11.2.min.js" %}"><\/script>')</script>
+<script src="{% static 'js1/modernizr.custom.js' %}"></script>
+<script src="{% static 'js1/bootstrap.min.js' %}"></script>
+<script src="{% static 'js1/jquery.cycle.all.min.js' %}"></script>
+<script src="{% static 'js1/jquery.maximage.min.js' %}"></script>
+<script src="{% static 'js1/classie.js' %}"></script>       
+<script src="{% static 'js1/jquery.downCount.js' %}"></script>
+<script src="{% static 'js1/jquery.ajaxchimp.min.js' %}"></script>
+<script src="{% static 'js1/form-contact.js' %}"></script>
+<script src="{% static 'js1/gmaps.js' %}"></script>
+<script src="{% static 'js1/jquery.nicescroll.3.5.4.js' %}"></script>
+<script src="{% static 'switcher/switcher.js' %}"></script>
+<script src="{% static 'js1/plugins.js' %}"></script>
+<script src="{% static 'js1/main.js' %}"></script>
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+</script>
+</body>
+</html>
