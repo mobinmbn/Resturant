@@ -20,7 +20,7 @@ class FoodListView(ListView):
 
 def food_view(request, id):
 
-    food = Food.get_object_or_404(id=id)
+    food = Food.objects.get(id=id)
     comment = Comment.objects.all()
 
     new_comment = CommentForm()
