@@ -1,8 +1,9 @@
 from typing import List
-from django.shortcuts import render, get_object_or_404
-from django.views.generic import ListView, DetailView
+from django.shortcuts import render
+from django.views.generic import ListView
 from .models import Food, Comment
 from .forms import CommentForm
+
 # Create your views here.
 
 
@@ -16,10 +17,10 @@ class FoodListView(ListView):
     # model = Food
     # template_name = "foods/food_details.html"
     # context_object_name = "foods"
-    
+
 
 def food_view(request, id):
-
+    
     food = Food.objects.get(id=id)
     comment = Comment.objects.all()
 
@@ -32,7 +33,7 @@ def food_view(request, id):
     else:
         new_comment = CommentForm()
 
-    context={
+    context= {
         "comments":comment,
         "foods":food,
         "form":new_comment,
